@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bese Saka Store | Contact Us</title>
+    <link rel='stylesheet' href='styles/style.css'>
+</head>
+<body>
+    <div id='content'>
+		<header>
+			<a id='logo_link' href='index.html'>
+				<img class='logo' src='images/bese-saka-store_logo.png' alt='Bese Saka Store Logo'>
+			</a>
+			<nav>
+                <a href='index.html'><img class='nav-bar-icon' src='images/home.png'></img> Home</a>
+                <a href='services.html'><img class='nav-bar-icon' src='images/services.png'></img> Services</a>
+                <a href='contact-us.html' class='active'><img class='nav-bar-icon' src='images/mail.png'></img> Contact Us</a>
+			</nav>
+		</header>
+        <main>
+            <h1>
+                Contact us
+            </h1>
+            <p>
+                You want to know how and where to find Bese Saka Store? Nothing easier than exploring the map bellow.
+            </p>
+            <div class='mapouter'>
+                <div class='googlemap_canvas'>
+                    <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=&t=&z=1&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div>
+            </div>
+            <div class='contact'>
+                <p>
+                    You have a question, a remark or just want to share with us your experience at Bese Saka Store or your last recipe?
+                </p>
+                <p>
+                    Call us or write us by filling out the form bellow. We will answer as soon as possible.
+                </p>
+                <p>
+                    <img src='images/telephone.jpg' alt='Telephone'>
+                    <a href="tel:+12345678901">+1 (234) 567-8901</a>
+                </p>
+                <p>
+                    <img src='images/mail.jpg' alt='Mail'>
+                    <form action='/contactus.html' method='post'>
+                        <h3>Contact</h3>
+                        <ul>
+                            <li>
+                              <input type='text' id='name' name='user_name' placeholder='Name'/>
+                            </li>
+                            <li>
+                              <input type='email' id='mail' name='user_email' placeholder='E-mail'/>
+                            </li>
+                            <li>
+                                <select required id='topic' name='topics'>
+                                    <option value='' disabled selected hidden>Select your topic</option>
+                                    <option value='general-question'>General question</option>
+                                    <option value='click-and-collect'>Click and Collect</option>
+                                    <option value='home-delivery'>Home delivery</option>
+                                    <option value='recipe'>Recipe</option>
+                                    <option value='suggestion'>Suggestion</option>
+                                </select>
+                            </li>
+                            <li>
+                              <textarea id='msg' name='user_message' placeholder='Write your message'></textarea>
+                            </li>
+                            <li class='send'>
+                                <button type='submit'>Send</button>
+                            </li>
+                          </ul>
+                    </form>
+                    <div id='feedback'></div>
+                </p>
+            </div>
+        </main>
+		<footer>
+			<p id='info'>Bese Saka Store &copy; 2022 - Xavier Serrano - WDD130-24</p>
+			<p><a href='index.html'>Home</a></p>
+            <p><a href='site-plan.html'>Site Plan</a></p>
+			<p><a href='contact-us.html'>Contact Us</a></p>
+			<div class='social'>
+				<a href='https://facebook.com' target='_blank'>
+					<img src='images/facebook.png' alt='Facebook icon'>
+				</a>
+				<a href='https://instagram.com' target='_blank'>
+					<img src='images/instagram.png' alt='Instagram icon'>
+				</a>
+                <a href='https://youtube.com' target='_blank'>
+					<img src='images/youtube.png' alt='YouTube icon'>
+				</a>
+                <a href='https://pinterest.com' target='_blank'>
+					<img src='images/pinterest.png' alt='Pinterest icon'>
+				</a>
+				<a href='https://twitter.com' target='_blank'>
+					<img src='images/twitter.png' alt='Twitter icon'>
+				</a>
+			</div>
+		</footer>
+    </div>
+</body>
+</html>
