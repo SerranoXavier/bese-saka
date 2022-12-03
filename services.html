@@ -1,11 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bese Saka Store | Services</title>
-    <link rel='stylesheet' href='styles/style.css'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' href='styles/style.css'>
 </head>
 <body>
     <div id='content'>
@@ -16,42 +13,55 @@
 			<nav>
                 <a href='index.html'><img class='nav-bar-icon' src='images/home.png' alt='Home icon'> Home</a>
                 <a href='services.html' class='active'><img class='nav-bar-icon' src='images/services.png' alt='Services icon'> Services</a>
+                <div class='dropdown'>
+                    <div class='btn active'>
+                    <i class='arrow'></i>
+                    </div>
+                  <div class='dropdown-content'>
+                    <a href='services.html#advice'>Advice</a>
+                    <a href='services.html#click-collect'>Click and Collect</a>
+                    <a href='services.html#home-delivery'>Home Delivery</a>
+                  </div>
+                </div>
                 <a href='contact-us.html'><img class='nav-bar-icon' src='images/mail.png' alt='Mail icon'> Contact Us</a>
 			</nav>
 		</header>
         <main>
-            <h1>
+            <h1 class='title'>
                 Services
             </h1>
             <p>
-                At Bese Saka Store, we offer many services to our customers in order to meet everybody’s needs. Bese Saka’s team is always ready and glad to help each and everyone.
+                At <mark>Bese Saka Store</mark>, we offer many services to our customers in order to meet everybody’s needs.<br><mark>Bese Saka Store</mark>’s team is always ready and glad to help each and everyone.
             </p>
-            <h3>
-                Advice
-            </h3>
+            <h2>
+                <a id='advice'>Advice</a>
+            </h2>
             <p>
-                Everyone at Bese Saka Store is committed to give strong, competent and wise advice to anyone who asks, all of that with a big smile!
+                Everyone at <mark>Bese Saka Store</mark> is committed to give strong, competent and wise advice to anyone who asks, all of that with a big smile!
             </p>
 
-            <h3>
-                Click and Collect
-            </h3>
-            <img src='images/click_and_collect.jpg' alt='Click and Collect'>
-            <p>
-                Give us your shopping list and within 2 hours just come to Bese Saka Store, and your groceries will be ready!
-            </p>
-
-            <h3>
-                Home delivery
-            </h3>
-            <p>
-                You cannot come to Bese Saka Store but really need that particular item? No panic! Just give us your shopping list and within 4 hours, your groceries will be delivered right into your kitchen!
-            </p>
-            <p>
-                Keep in mind that additional fees will be charged, depending on the delivering location ad that we will not be able to deliver outside a area bigger than 20 kilometers around Bese Saka Store.
-            </p>
-            <img src='images/home_delivery.jpg' alt='Home delivery'>
-
+            <h2>
+                <a id='click-collect'>Click and Collect</a>
+            </h2>
+                <div id='grid-serv-1'>
+                <img id='grid-1-item-1' src='images/click_and_collect.jpg' alt='Click and Collect'>
+                <p id='grid-1-item-2'>
+                    Give us your shopping list and within 2 hours just come to <mark>Bese Saka Store</mark>, and your groceries will be ready!
+                </p>
+            </div>
+            <br>
+            <h2>
+                <a id='home-delivery'>Home Delivery</a>
+            </h2>
+            <div id='grid-serv-2'>
+                <p id='grid-2-item-1'>
+                    You cannot come to <mark>Bese Saka Store</mark> but really need that particular item? No panic! Just give us your shopping list and within 4 hours, your groceries will be delivered right into your kitchen!
+                </p>
+                <p id='grid-2-item-2'>
+                    Keep in mind that additional fees will be charged, depending on the delivering location and that we will not be able to deliver outside a area bigger than 20 kilometers around <mark>Bese Saka Store</mark>.
+                </p>
+                <img id='grid-2-item-3' src='images/home_delivery.jpg' alt='Home delivery'>
+            </div>
         </main>
 		<footer>
 			<p id='info'>Bese Saka Store &copy; 2022 - Xavier Serrano - WDD130-24</p>
