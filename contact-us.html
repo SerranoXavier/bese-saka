@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Bese Saka Store | Contact Us</title>
     <link rel='stylesheet' href='styles/style.css'>
 </head>
@@ -30,38 +30,57 @@
 			</nav>
 		</header>
         <main>
-            <h1>
-                Contact us
+            <h1 class='title'>
+                Contact Us
             </h1>
+            <br>
+            <h2>
+                <a id='location'>Location</a>
+            </h2>
             <p>
-                You want to know how and where to find Bese Saka Store? Nothing easier than exploring the map bellow.
+                You want to know how and where to find <mark>Bese Saka Store</mark>? Nothing easier than exploring the map bellow.
             </p>
             <div class='mapouter'>
                 <div class='googlemap_canvas'>
-                    <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=&t=&z=1&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <iframe width='600' height='500' id='gmap_canvas' src='https://maps.google.com/maps?q=45.50884,%20-73.58781&z=10&output=embed'></iframe>
                 </div>
             </div>
             <div class='contact'>
+                <br>
+                <h2>
+                    <a id='contact'>Contact</a>
+                </h2>
                 <p>
-                    You have a question, a remark or just want to share with us your experience at Bese Saka Store or your last recipe?
+                    You have a question, a remark or just want to share with us your experience at <mark>Bese Saka Store</mark> or your last recipe?
                 </p>
                 <p>
                     Call us or write us by filling out the form bellow. We will answer as soon as possible.
                 </p>
-                <p>
-                    <img src='images/telephone.jpg' alt='Telephone'>
-                    <a href="tel:+12345678901">+1 (234) 567-8901</a>
-                </p>
-                <p>
-                    <img src='images/mail.jpg' alt='Mail'>
-                    <form action='/contactus.html' method='post'>
-                        <h3>Contact</h3>
+                <div>
+                    <div class='contact-section'>
+                        <img class='contact-img' src='images/telephone.jpg' alt='Telephone'>
+                        <h3>
+                            <a id='telephone'>Telephone</a>
+                        </h3>
+                    </div>
+                    <br>
+                    <a id='num-tel' href='tel:+12345678901'>+1 (234) 567-8901</a>
+                    <br><br>
+                </div>
+                <div>
+                    <div class='contact-section'>
+                        <img class='contact-img' src='images/mail.jpg' alt='Mail'>
+                        <h3>
+                            <a id='e-mail'>E-Mail</a>
+                        </h3>
+                    </div>
+                    <form action='contact-us.html#e-mail' method='post'>
                         <ul>
                             <li>
-                              <input type='text' id='name' name='user_name' placeholder='Name'/>
+                              <input required type='text' id='name' name='user_name' placeholder='Name'>
                             </li>
                             <li>
-                              <input type='email' id='mail' name='user_email' placeholder='E-mail'/>
+                              <input required type='email' id='mail' name='user_email' placeholder='E-mail'>
                             </li>
                             <li>
                                 <select required id='topic' name='topics'>
@@ -74,7 +93,7 @@
                                 </select>
                             </li>
                             <li>
-                              <textarea id='msg' name='user_message' placeholder='Write your message'></textarea>
+                              <textarea required id='msg' name='user_message' placeholder='Write your message'></textarea>
                             </li>
                             <li class='send'>
                                 <button type='submit'>Send</button>
@@ -82,7 +101,7 @@
                           </ul>
                     </form>
                     <div id='feedback'></div>
-                </p>
+                </div>
             </div>
         </main>
 		<footer>
@@ -109,5 +128,22 @@
 			</div>
 		</footer>
     </div>
+	<script>
+		// get the feedback div element so we can do something with it.
+		const feedbackElement = document.getElementById('feedback');
+		// get the form so we can read what was entered in it.
+		const formElement = document.forms[0];
+		// add a 'listener' to wait for a submission of our form. When that happens run the code below.
+		formElement.addEventListener('submit', function(e) {
+			// stop the form from doing the default action.
+			e.preventDefault();
+			// set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+			feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+			// make the feedback element visible.
+			feedbackElement.style.display = 'block';
+			window.scrollTo({top: 1275, left: 0, behavior: 'smooth'});
+			formElement.reset();
+		});
+	</script>
 </body>
 </html>
