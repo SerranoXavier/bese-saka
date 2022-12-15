@@ -1,0 +1,55 @@
+@media screen and (max-width: 900px) {
+    header{
+        height: auto;
+        position: sticky;
+    }
+    .logo{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        border-right: 2px solid #8F5C38;
+    }
+    #logo_link{
+        width: 50%;
+        height: auto;
+        text-align: center;
+    }
+    .nav-bar-icon{
+        height: 15px;
+    }
+    /* nav, footer{
+        flex-direction: column;
+    } */
+    nav a{
+        display: block;
+        padding: 5px;
+        width: 50%;
+        font-size: 15px;
+    }
+    .arrow{
+        padding: 0 2px 2px 0;
+    }
+    #hero-img{
+        margin: 0 auto;
+    }
+    .img-left, .img-right{
+        width: 80%;
+        height: auto;
+        padding: 0 auto;
+        margin: 0 auto;
+    }
+    footer{
+        height: auto;
+        width: 100%;
+    }
+    footer .social{
+        margin: 0 auto;
+    }
+    footer .social a{
+        text-align: center;
+        display:block;
+        float: left;
+        text-align: center;
+        border-radius: 2px;
+    }
+}
